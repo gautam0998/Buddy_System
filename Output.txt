@@ -1,0 +1,170 @@
+
+
+
+Output:
+
+Allocator: A : 20
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 1 Available: 512, 
+256 bytes: 1 Available: 256, 
+128 bytes: 1 Available: 128, 
+64 bytes: 1 Available: 64, 
+32 bytes: 1 Available: 32, 
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process A has memory from 0 to 32
+
+Allocator: B : 35
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 1 Available: 512, 
+256 bytes: 1 Available: 256, 
+128 bytes: 1 Available: 128, 
+64 bytes: 0 Available
+32 bytes: 1 Available: 32, 
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process A has memory from 0 to 32
+Process B has memory from 64 to 128
+
+Allocator: C : 90
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 1 Available: 512, 
+256 bytes: 1 Available: 256, 
+128 bytes: 0 Available
+64 bytes: 0 Available
+32 bytes: 1 Available: 32, 
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process A has memory from 0 to 32
+Process B has memory from 64 to 128
+Process C has memory from 128 to 256
+
+Allocator: D : 40
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 1 Available: 512, 
+256 bytes: 0 Available
+128 bytes: 1 Available: 384, 
+64 bytes: 1 Available: 320, 
+32 bytes: 1 Available: 32, 
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process A has memory from 0 to 32
+Process B has memory from 64 to 128
+Process C has memory from 128 to 256
+Process D has memory from 256 to 320
+
+Allocator: E : 240
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 0 Available
+256 bytes: 1 Available: 768, 
+128 bytes: 1 Available: 384, 
+64 bytes: 1 Available: 320, 
+32 bytes: 1 Available: 32, 
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process A has memory from 0 to 32
+Process B has memory from 64 to 128
+Process C has memory from 128 to 256
+Process D has memory from 256 to 320
+Process E has memory from 512 to 768
+
+Deallocator: D : -40
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 0 Available
+256 bytes: 2 Available: 256, 768, 
+128 bytes: 0 Available
+64 bytes: 0 Available
+32 bytes: 1 Available: 32, 
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process A has memory from 0 to 32
+Process B has memory from 64 to 128
+Process C has memory from 128 to 256
+Process E has memory from 512 to 768
+
+Deallocator: A : -20
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 0 Available
+256 bytes: 2 Available: 256, 768, 
+128 bytes: 0 Available
+64 bytes: 1 Available: 0, 
+32 bytes: 0 Available
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process B has memory from 64 to 128
+Process C has memory from 128 to 256
+Process E has memory from 512 to 768
+
+Deallocator: C : -90
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 0 Available
+256 bytes: 2 Available: 256, 768, 
+128 bytes: 1 Available: 128, 
+64 bytes: 1 Available: 0, 
+32 bytes: 0 Available
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process B has memory from 64 to 128
+Process E has memory from 512 to 768
+
+Deallocator: B : -35
+2048 bytes: 0 Available
+1024 bytes: 1 Available: 1024, 
+512 bytes: 1 Available: 0, 
+256 bytes: 1 Available: 768, 
+128 bytes: 0 Available
+64 bytes: 0 Available
+32 bytes: 0 Available
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+Process E has memory from 512 to 768
+
+Deallocator: E : -240
+2048 bytes: 1 Available: 0, 
+1024 bytes: 0 Available
+512 bytes: 0 Available
+256 bytes: 0 Available
+128 bytes: 0 Available
+64 bytes: 0 Available
+32 bytes: 0 Available
+16 bytes: 0 Available
+8 bytes: 0 Available
+4 bytes: 0 Available
+2 bytes: 0 Available
+1 bytes: 0 Available
+
